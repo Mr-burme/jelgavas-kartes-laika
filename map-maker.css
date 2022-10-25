@@ -1,0 +1,12 @@
+#map { 
+    height: 600px; 
+}
+
+#container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#hack { 
+    display: none;
+}
