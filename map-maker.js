@@ -7,7 +7,7 @@ var map = L.map('map').setView([56.6503, 23.7229], 4);
 
 var osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
-    minZoom: 10,
+    minZoom: 10,//10
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
@@ -39,6 +39,8 @@ $.getJSON("https://raw.githubusercontent.com/Mr-burme/jelgavas-kartes-laika/main
 async function getCurrenMapURL() {
 
     curren_map_url = map_data[map_index].Datne
+    console.log(curren_map_url)
+    return curren_map_url
 }
 
 function mapImage(imageUrl) {
@@ -46,34 +48,100 @@ function mapImage(imageUrl) {
     var img_ratio = NaN
 
     function imgRatio() {
+        $('#age').val(Number(map_data[map_index]["Radīšanas datums"]));
         let img = document.createElement('img');
         img.id = 'imgId';
-        img.src = imageUrl
+        img.src = curren_map_url
         document.getElementById("hack").appendChild(img);
         let myImg = document.querySelector("#imgId");
         setTimeout(() => {
             let realWidth = myImg.naturalWidth;
             let realHeight = myImg.naturalHeight;
-            img_ratio = realWidth / realHeight * 0.2;
+            img_ratio = realWidth / realHeight;
         }, "100")
 
 
     }
+
+    var value_of_input;
+
     imgRatio()
     var errorOverlayUrl = 'https://cdn-icons-png.flaticon.com/512/110/110686.png';
-    var altText = 'Image of Newark, N.J. in 1922. Source: The University of Texas at Austin, UT Libraries Map Collection.';
+    var altText = '';
     var latLngBounds;
     setTimeout(() => {
-        latLngBounds = L.latLngBounds([[56.6503, 23.7229], [56.6503 + 0.1, 23.7229 + img_ratio]]);
-    }, "500")
+        latLngBounds = L.latLngBounds([[56.6503, 23.7229], [56.6503 + 0.1, 23.7229 + img_ratio * 0.2]]);
+    }, "100")
 
     setTimeout(() => {
+
+
+
+        
         var imageOverlay = L.imageOverlay(imageUrl, latLngBounds, {
-            opacity: 0.8,
+            opacity: 0.6,
             errorOverlayUrl: errorOverlayUrl,
             alt: altText,
             interactive: true
         }).addTo(map);
+
+
+
+
+        $("#next").click(function(){
+            map_index += 1
+            $('#age').val(Number(map_data[map_index]["Radīšanas datums"]));
+            getCurrenMapURL()
+            imgRatio()
+            latLngBounds = L.latLngBounds([[56.6503, 23.7229], [56.6503 + 0.1, 23.7229 + img_ratio * 0.2]]);
+            imageOverlay.setUrl(curren_map_url);
+            imageOverlay.setBounds(latLngBounds)
+        }); 
+        $("#delete").click(function(){
+            //delete map_data[map_index];
+            map_data.splice(map_index, 1);
+
+
+            $('#age').val(Number(map_data[map_index]["Radīšanas datums"]));
+            getCurrenMapURL()
+            imgRatio()
+            latLngBounds = L.latLngBounds([[56.6503, 23.7229], [56.6503 + 0.1, 23.7229 + img_ratio * 0.2]]);
+            imageOverlay.setUrl(curren_map_url);
+            imageOverlay.setBounds(latLngBounds)
+        }); 
+        $("#save").click(function(){
+            if (value_of_input == undefined){
+                value_of_input = 0
+            }
+            map_data[map_index].size = value_of_input
+            map_data[map_index].bounds = imageOverlay.getBounds()
+            map_data[map_index]["Radīšanas datums"] = $('#age').val()
+            
+            console.log(map_data[map_index])
+        }); 
+        
+
+
+
+        const selectElement = document.getElementById('size');
+
+        let before_value = 0;
+
+        selectElement.addEventListener('change', (event) => {
+            let east = imageOverlay.getBounds().getEast()
+            let west = imageOverlay.getBounds().getWest()
+            let south = imageOverlay.getBounds().getSouth()
+            let north = imageOverlay.getBounds().getNorth()
+            
+            value_of_input = Number(event.target.value)
+            increment_size_by = Math.round((value_of_input - before_value) * 1000) / 1000
+
+            let sizeLatLngBounds = L.latLngBounds([[south, east + increment_size_by*4], [north + increment_size_by, west]]);
+
+
+            imageOverlay.setBounds(sizeLatLngBounds)
+            before_value = value_of_input;
+        });
 
 
 
@@ -87,17 +155,17 @@ function mapImage(imageUrl) {
                 oldy = 0,
 
                 mousemovemethod = function (e) {
-                    
+
 
                     let newLatLngBounds;
 
                     let moveCoefficient = 0.001
-                    if (map.getZoom() > 12){
+                    if (map.getZoom() > 12) {
                         moveCoefficient = 0.0001
                     }
                     //console.log(map.getZoom())
                     //console.log(map.getZoom() / 19)
-                    
+
 
                     let east = imageOverlay.getBounds().getEast()
                     let west = imageOverlay.getBounds().getWest()
@@ -109,8 +177,8 @@ function mapImage(imageUrl) {
                         if (moveCoefficient > 0.01) {
                             moveCoefficient = 0.001
                         }
-                        console.log(moveCoefficient)
-                        
+
+
                         direction = "right";
                         //east west
                         newLatLngBounds = L.latLngBounds([[south, east + moveCoefficient], [north, west + moveCoefficient]]);
@@ -152,7 +220,7 @@ function mapImage(imageUrl) {
             document.addEventListener('mousemove', mousemovemethod);
             document.body.onmouseup = function () { document.removeEventListener('mousemove', mousemovemethod); map.dragging.enable(); };
         }
-    }, "1000")
+    }, "500")
 
 }
 
