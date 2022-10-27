@@ -1,98 +1,119 @@
 [
     {
-        "_id": 31,
-        "Nosaukums": "Lantkahrte kas rahda visas Eiropas zemmes. tahs weetas kur taggad karro. Turku-valsts da\u013c\u013cas Azi\u0101 un Awrik\u0101 ar Juhdu un Egiptes zemmi",
-        "Alternat\u012bvais nosaukums": " Landkarte. kas r\u0101da visas Eiropas zemes. t\u0101s vietas. kur tagad karo. Turku valsts da\u013cas \u0100zij\u0101 un \u0100frik\u0101 ar J\u016bdu un \u0112\u0123iptes zemi",
-        "Autors": " \u0160ulcs. R\u016bdolfs. 1807-1866",
-        "Izdev\u0113js": " Jelgava : \u0160\u016bberta litogr\u0101fija",
-        "Rad\u012b\u0161anas datums": " 1854",
-        "Apjoms": " 47 x 62 cm",
-        "Fiziskais nes\u0113js": " Pap\u012brs",
-        "Anot\u0101cija": " Eiropas kart\u0113 uzr\u0101d\u012btas valstu robe\u017eas",
-        "Piez\u012bmes": " Pielikum\u0101 kartes apraksts un \u0123eogr\u0101fiskas zi\u0146as",
-        "Organiz\u0101cija": " Latvijas Nacion\u0101l\u0101 bibliot\u0113ka",
-        "Departaments": " Letonikas un Baltijas centrs. Kar\u0161u las\u012btava",
-        "Novietojuma kods": " KtP1-1/13",
-        "Autorties\u012bbas": " Nav aizsarg\u0101ts ar autorties\u012bb\u0101m",
-        "Piek\u013cuves ties\u012bbas": " Pieejams t\u012bmekl\u012b",
-        "Datne": " http://dom.lndb.lv/data/obj/file/308309",
-        "rank": 0.0573088
-    },
-    {
         "_id": 1732,
-        "Nosaukums": "Jelgavas pils\u0113tas pl\u0101ns",
-        "Alternat\u012bvais nosaukums": " ",
+        "Nosaukums": "Jelgavas pilsētas plāns",
+        "Alternatīvais nosaukums": " ",
         "Autors": " ",
-        "Izdev\u0113js": " ",
-        "Rad\u012b\u0161anas datums": " ",
+        "Izdevējs": " ",
+        "Radīšanas datums": "1939",
         "Apjoms": " ",
-        "Fiziskais nes\u0113js": " Pap\u012brs",
-        "Anot\u0101cija": " ",
-        "Piez\u012bmes": " ",
-        "Organiz\u0101cija": " Latvijas Nacion\u0101l\u0101 bibliot\u0113ka",
-        "Departaments": " Letonikas un Baltijas centrs. Kar\u0161u las\u012btava",
+        "Fiziskais nesējs": " Papīrs",
+        "Anotācija": " ",
+        "Piezīmes": " ",
+        "Organizācija": " Latvijas Nacionālā bibliotēka",
+        "Departaments": " Letonikas un Baltijas centrs. Karšu lasītava",
         "Novietojuma kods": " KtL1-3/103",
-        "Autorties\u012bbas": " Nav aizsarg\u0101ts ar autorties\u012bb\u0101m",
-        "Piek\u013cuves ties\u012bbas": " Pieejams t\u012bmekl\u012b",
+        "Autortiesības": " Nav aizsargāts ar autortiesībām",
+        "Piekļuves tiesības": " Pieejams tīmeklī",
         "Datne": " http://dom.lndb.lv/data/obj/file/343166",
-        "rank": 0.0573088
-    },
-    {
+        "rank": 0.0573088,
+        "bounds": {
+          "_southWest": {
+            "lat": 56.60490000000029,
+            "lng": 23.599399999999886
+          },
+          "_northEast": {
+            "lat": 56.684900000000326,
+            "lng": 23.796765799667824
+          }
+        }
+      },
+      {
         "_id": 1733,
-        "Nosaukums": "Jelgavas pl\u0101ns",
-        "Alternat\u012bvais nosaukums": " ",
+        "Nosaukums": "Jelgavas plāns",
+        "Alternatīvais nosaukums": " ",
         "Autors": " ",
-        "Izdev\u0113js": " ",
-        "Rad\u012b\u0161anas datums": " ",
+        "Izdevējs": " ",
+        "Radīšanas datums": "1932",
         "Apjoms": " ",
-        "Fiziskais nes\u0113js": " Pap\u012brs",
-        "Anot\u0101cija": " ",
-        "Piez\u012bmes": " ",
-        "Organiz\u0101cija": " Latvijas Nacion\u0101l\u0101 bibliot\u0113ka",
-        "Departaments": " Letonikas un Baltijas centrs. Kar\u0161u las\u012btava",
+        "Fiziskais nesējs": " Papīrs",
+        "Anotācija": " ",
+        "Piezīmes": " ",
+        "Organizācija": " Latvijas Nacionālā bibliotēka",
+        "Departaments": " Letonikas un Baltijas centrs. Karšu lasītava",
         "Novietojuma kods": " KtL1-1/50",
-        "Autorties\u012bbas": " Nav aizsarg\u0101ts ar autorties\u012bb\u0101m",
-        "Piek\u013cuves ties\u012bbas": " Pieejams t\u012bmekl\u012b",
+        "Autortiesības": " Nav aizsargāts ar autortiesībām",
+        "Piekļuves tiesības": " Pieejams tīmeklī",
         "Datne": " http://dom.lndb.lv/data/obj/file/343177",
-        "rank": 0.0573088
-    },
-    {
+        "rank": 0.0573088,
+        "bounds": {
+          "_southWest": {
+            "lat": 56.60659999999995,
+            "lng": 23.59580000000007
+          },
+          "_northEast": {
+            "lat": 56.688599999999994,
+            "lng": 23.801165799668006
+          }
+        }
+      },
+      {
         "_id": 1737,
         "Nosaukums": "33-Jelgava",
-        "Alternat\u012bvais nosaukums": " ",
+        "Alternatīvais nosaukums": " ",
         "Autors": " ",
-        "Izdev\u0113js": " ",
-        "Rad\u012b\u0161anas datums": " ",
+        "Izdevējs": " ",
+        "Radīšanas datums": "1933",
         "Apjoms": " ",
-        "Fiziskais nes\u0113js": " Pap\u012brs",
-        "Anot\u0101cija": " ",
-        "Piez\u012bmes": " ",
-        "Organiz\u0101cija": " Latvijas Nacion\u0101l\u0101 bibliot\u0113ka",
-        "Departaments": " Letonikas un Baltijas centrs. Kar\u0161u las\u012btava",
+        "Fiziskais nesējs": " Papīrs",
+        "Anotācija": " ",
+        "Piezīmes": " ",
+        "Organizācija": " Latvijas Nacionālā bibliotēka",
+        "Departaments": " Letonikas un Baltijas centrs. Karšu lasītava",
         "Novietojuma kods": " KtL1-0/147/33",
-        "Autorties\u012bbas": " Nav aizsarg\u0101ts ar autorties\u012bb\u0101m",
-        "Piek\u013cuves ties\u012bbas": " Pieejams t\u012bmekl\u012b",
+        "Autortiesības": " Nav aizsargāts ar autortiesībām",
+        "Piekļuves tiesības": " Pieejams tīmeklī",
         "Datne": " http://dom.lndb.lv/data/obj/file/343378",
-        "rank": 0.0573088
-    },
-    {
+        "rank": 0.0573088,
+        "bounds": {
+          "_southWest": {
+            "lat": 56.4513,
+            "lng": 23.151600000000055
+          },
+          "_northEast": {
+            "lat": 56.7893,
+            "lng": 24.380965799668015
+          }
+        }
+      },
+      {
         "_id": 1826,
-        "Nosaukums": "(Latwijas) latweeschu semes karte : p\u0113c visjaun\u0101kiem kar\u0161u materi\u0101liem un pa\u0161a kr\u0101t\u0101m zi\u0146\u0101m",
-        "Alternat\u012bvais nosaukums": " Latvie\u0161u zemes karte",
-        "Autors": " Sili\u0146\u0161. Mat\u012bss. 1861-1942",
-        "Izdev\u0113js": " R\u012bga : M. Sili\u0146\u0161 (R\u012bga : Ernst Plates)",
-        "Rad\u012b\u0161anas datums": " ",
+        "Nosaukums": "(Latwijas) latweeschu semes karte : pēc visjaunākiem karšu materiāliem un paša krātām ziņām",
+        "Alternatīvais nosaukums": " Latviešu zemes karte",
+        "Autors": " Siliņš. Matīss. 1861-1942",
+        "Izdevējs": " Rīga : M. Siliņš (Rīga : Ernst Plates)",
+        "Radīšanas datums": "1907",
         "Apjoms": " ",
-        "Fiziskais nes\u0113js": " Pap\u012brs",
-        "Anot\u0101cija": " ",
-        "Piez\u012bmes": " Papildkartes: R\u012bga ; Valka ; Valmiera ; C\u0113sis ; Jelgava ; Ventspils ; Bauska ; Dvinska (Dinaburga) ; Liep\u0101ja ; Jaunjelgava ; J\u0113kabmiests ; Talsi ; Tukums ; Kuld\u012bga ; Limba\u017ei ; Aizpute ; Ludza ; R\u0113zekne ; Gaujas leja pie Siguldas un Turaidas. 1:126.000.",
-        "Organiz\u0101cija": " Latvijas Nacion\u0101l\u0101 bibliot\u0113ka",
-        "Departaments": " Letonikas un Baltijas centrs. Kar\u0161u las\u012btava",
+        "Fiziskais nesējs": " Papīrs",
+        "Anotācija": " ",
+        "Piezīmes": " Papildkartes: Rīga ; Valka ; Valmiera ; Cēsis ; Jelgava ; Ventspils ; Bauska ; Dvinska (Dinaburga) ; Liepāja ; Jaunjelgava ; Jēkabmiests ; Talsi ; Tukums ; Kuldīga ; Limbaži ; Aizpute ; Ludza ; Rēzekne ; Gaujas leja pie Siguldas un Turaidas. 1:126.000.",
+        "Organizācija": " Latvijas Nacionālā bibliotēka",
+        "Departaments": " Letonikas un Baltijas centrs. Karšu lasītava",
         "Novietojuma kods": " KtL1-1/144",
-        "Autorties\u012bbas": " Nav aizsarg\u0101ts ar autorties\u012bb\u0101m",
-        "Piek\u013cuves ties\u012bbas": " Pieejams t\u012bmekl\u012b",
+        "Autortiesības": " Nav aizsargāts ar autortiesībām",
+        "Piekļuves tiesības": " Pieejams tīmeklī",
         "Datne": " http://dom.lndb.lv/data/obj/file/27427881",
-        "rank": 0.0573088
+        "rank": 0.0573088,
+        "bounds": {
+          "_southWest": {
+            "lat": 56.409700000000015,
+            "lng": 22.096699999999963
+          },
+          "_northEast": {
+            "lat": 57.27570000000009,
+            "lng": 25.438065799667875
+          }
+        }
     },
     {
         "_id": 110,
