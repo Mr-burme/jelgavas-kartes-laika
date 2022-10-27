@@ -113,11 +113,10 @@ function mapImage(imageUrl) {
             if (value_of_input == undefined){
                 value_of_input = 0
             }
-            map_data[map_index].size = value_of_input
             map_data[map_index].bounds = imageOverlay.getBounds()
             map_data[map_index]["Radīšanas datums"] = $('#age').val()
             
-            console.log(map_data[map_index])
+            console.log(map_data)
         }); 
         
 

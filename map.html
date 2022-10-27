@@ -1,12 +1,31 @@
 <!DOCTYPE html>
-<html lang="lv">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jelgava laikā</title>
+    <title>Jelgavas Laiki</title>
+    <link rel="icon" type="image/x-icon"
+        href="https://enciklopedija.lv/api/image/thumbnail?name=2db49950c483-bbb32171-2b76-4491-a802-155fc85d8123.jpg&size=title">
+
 </head>
+
 <body>
-    <h2>TEST</h2>
+    <div class="slider">
+        <input id="age" onchange='setImage(this)' type="range" min="0" max="23" value="0" step="1" />
+    </div>
+
+    <div id='map'></div>
 </body>
+<link rel="stylesheet" href="map.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css"
+     integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+     crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js"
+     integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg="
+     crossorigin=""></script>
+<script src="./map.js"></script>
+
 </html>
